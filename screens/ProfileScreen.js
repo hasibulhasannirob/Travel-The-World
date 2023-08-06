@@ -71,7 +71,9 @@ const ProfileScreen = () => {
                 <Text className="text-[#636262]">----------------------------------------------------------------------</Text>
             </View>
 
-            <TouchableOpacity className=" mt-5 items-center justify-center">
+            <TouchableOpacity
+                onPress={() => { navigation.navigate("Login") }}
+                className=" mt-5 items-center justify-center">
                 <Text className="text-[#f34343] text-[16px] font-semibold">Logout</Text>
             </TouchableOpacity>
         </SafeAreaView>
